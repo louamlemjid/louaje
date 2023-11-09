@@ -1,0 +1,111 @@
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 30px;
+    gap: 10px;
+    width: 300px;
+    color: white;
+    height: 500px;
+    padding: 10px;
+    border: solid 5px black;
+
+}
+
+.seat{ 
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    
+    
+    
+}
+.place{
+    cursor: pointer;
+}
+.mat{
+    grid-column: span 2;
+    background-image: url("./Untitled.png");
+    background-position: 0px;
+    background-size: 160px;
+    color: black;
+    
+}
+.place.adr{
+    grid-row: span 2;
+    margin: 15px;
+    border-radius: 0;
+    color: black;
+}
+.place.adr p{
+    transform: rotate(180deg);
+    font-size: 30px;
+    writing-mode: vertical-rl;
+    color: rgb(240, 13, 13);
+    font-weight: 900;
+}
+.seat{
+    height: 50%;
+}
+.place.bla{
+    grid-column: span 3;
+    font-weight: 800;
+    padding: 5px;
+    box-shadow:3px 3px rgb(173, 173, 173);
+    background-color: black;
+    text-align: center;
+    margin: auto;
+    width: 130px;
+}
+.rouge{
+    background: linear-gradient(45deg, rgb(250, 236, 236) 2%, rgba(236, 22, 7, 0.897) 3%);
+    color: white;
+}
+.vert{
+    background: linear-gradient(45deg, rgba(255,255,255,1) 2%, rgba(33,222,106,0.8967786943879115) 3%);
+    color: white;
+}
+main{
+    display: flex;
+    gap: 40px;
+    margin: auto;
+    justify-content: center;
+}
+.left,.right{
+    display: flex;
+    flex-direction: column;
+}
+.leftone,.lefttwo,.leftthree,.rightone,.righttwo,.rightthree{
+    margin: auto;
+    
+    width: 100%;
+    height: 100%;
+}
+.leftone,.rightone,.leftthree,.rightthree{
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid rgb(255, 0, 0)
+}
+.leftthree,.rightthree{
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid rgb(253, 253, 253)
+}
+.lefttwo,.righttwo{
+    background-color: rgb(255, 0, 0);
+}
+.leftthree,.rightthree{
+    position: relative;
+    bottom: 30px;
+    
+}
+.mat p{
+    text-align: center;
+    padding-left: 100px;
+    padding-top: 20px;
+    font-size: 20px;
+    
+}
