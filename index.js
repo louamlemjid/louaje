@@ -8,11 +8,11 @@ for (var i=0;i<document.querySelectorAll(".seat").length;i++){
             occupe(this.classList[2])
         }
         console.log(this.classList,this.classList.length-1,this.classList[this.classList.length-1],document.querySelectorAll(".vert").length)
-        document.querySelector(".mat p").textContent=document.querySelectorAll(".vert").length +" Place dispo";
+        document.querySelector(".dispo").textContent=document.querySelectorAll(".vert").length;
     }
         )
     }
-    document.querySelector(".mat p").textContent="8 Place dispo";
+    document.querySelector(".dispo").textContent="8 ";
 function joingnable(cl){
     document.querySelector(`.${cl}`).classList.add("vert");
     document.querySelector(`.${cl} p`).textContent="فارغ";
