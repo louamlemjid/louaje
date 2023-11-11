@@ -46,7 +46,7 @@ section{
     grid-column: span 3;
     font-weight: 800;
     padding: 5px;
-    box-shadow:3px 3px rgb(173, 173, 173);
+    box-shadow: 1px 0 5px 2px rgb(46, 44, 44);
     background-color: black;
     text-align: center;
     margin: auto;
@@ -102,9 +102,9 @@ main{
     bottom: 30px;
     
 }
-.mat p{
-    text-align: end;
-    font-size: 15px;
+.mat .pl,.dispo{
+    text-align: center;
+    font-size: 16px;
     font-weight: 600;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
