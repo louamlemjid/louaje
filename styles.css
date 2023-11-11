@@ -3,7 +3,7 @@ section{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 30px;
     gap: 10px;
-    width: 300px;
+    width: 250px;
     color: white;
     height: 500px;
     padding: 10px;
@@ -15,34 +15,30 @@ section{
     border-radius: 20px;
     padding: 10px;
     text-align: center;
-    
-    
+    width: 50px;
     
 }
 .place{
     cursor: pointer;
 }
-.mat{
-    grid-column: span 2;
-    background-image: url("./Untitled.png");
-    background-position: 0px;
-    background-size: 160px;
-    color: black;
+.mat1{
     
+    background-image: url("./Untitled.png");  
+    background-size: 100px;
+    background-position: -15px -12px;
+    color: rgb(0, 0, 0);  
+    height: 70%;
+}
+.mat{
+    color: black;
 }
 .place.adr{
-    grid-row: span 2;
+    
     margin: 15px;
     border-radius: 0;
     color: black;
 }
-.place.adr p{
-    transform: rotate(180deg);
-    font-size: 20px;
-    writing-mode: vertical-rl;
-    color: rgb(240, 13, 13);
-    font-weight: 900;
-}
+
 .seat{
     height: 50%;
 }
@@ -59,10 +55,14 @@ section{
 .rouge{
     background: linear-gradient(45deg, rgb(250, 236, 236) 2%, rgba(236, 22, 7, 0.897) 3%);
     color: white;
+    box-shadow: 1px 0 5px 1px rgb(146, 146, 146);
+    
 }
 .vert{
-    background: linear-gradient(45deg, rgba(255,255,255,1) 2%, rgba(33,222,106,0.8967786943879115) 3%);
+    background: linear-gradient(45deg, rgb(255, 255, 255) 2%, rgb(0, 196, 65) 3%);
     color: white;
+    box-shadow: 1px 0 5px 1px rgb(146, 146, 146);
+    
 }
 main{
     display: flex;
@@ -83,15 +83,15 @@ main{
 .leftone,.rightone,.leftthree,.rightthree{
     width: 0; 
     height: 0; 
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 30px solid rgb(255, 0, 0)
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid rgb(255, 0, 0)
 }
 .leftthree,.rightthree{
     width: 0; 
     height: 0; 
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
     border-bottom: 30px solid rgb(253, 253, 253)
 }
 .lefttwo,.righttwo{
@@ -103,9 +103,9 @@ main{
     
 }
 .mat p{
-    text-align: center;
-    padding-left: 100px;
-    padding-top: 20px;
-    font-size: 20px;
+    text-align: end;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
